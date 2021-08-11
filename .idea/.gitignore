@@ -1,6 +1,12 @@
 # Default ignored files
 /shelf/
 /workspace.xml
+.idea/checkstyle-idea.xml
+        .idea/compiler.xml
+        .idea/jarRepositories.xml
+        .idea/misc.xml
+        .idea/vcs.xml
+.iml
 *.class
 
 # Mobile Tools for Java (J2ME)
