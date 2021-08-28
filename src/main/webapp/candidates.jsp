@@ -37,7 +37,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                    <% for (Candidate candidate : Store.instOf().findAllCandidates()) { %>
+                    <% for (Candidate candidate : (Collection<Candidate>) request.getAttribute("candidates") { %>
                     <tr>
                      <td>
                     <a href="<%=request.getContextPath()%>/candidate/edit.jsp?id=<%=candidate.getId()%>">

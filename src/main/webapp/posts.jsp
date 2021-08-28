@@ -37,7 +37,7 @@
                     </tr>
                     </thead>
                     <tbody>
-                   <% for (Post post : Store.instOf().findAllPosts()) { %>
+                 <% for (Post post : (Collection<Post>) request.getAttribute("posts")) { %>
                    <tr>
                        <td>
                            <a href="<%=request.getContextPath()%>/post/edit.jsp?id=<%=post.getId()%>">
@@ -46,7 +46,7 @@
                            <%=post.getName()%>
                        </td>
                    </tr>
-                    <% } %>
+                   <% } %>
                     </tbody>
                 </table>
             </div>
