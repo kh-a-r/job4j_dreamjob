@@ -2,6 +2,7 @@
 <%@ page import="ru.job4j.dream.store.Store" %>
 <%@ page import="ru.job4j.dream.model.Candidate" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
+<%@ page import="java.util.Collection" %>
 
 <!doctype html>
 <html lang="en">
