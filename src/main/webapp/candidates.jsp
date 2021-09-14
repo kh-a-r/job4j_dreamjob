@@ -37,6 +37,7 @@
                     <thead>
                     <tr>
                         <th scope="col">Фамилия Имя</th>
+                        <th scope="col">Фото</th>
                     </tr>
                     </thead>
                     <tbody>
@@ -47,6 +48,13 @@
                                    <i class="fa fa-edit mr-3"></i>
                                </a>
                                <c:out value="${candidate.name}"/>
+                           </td>
+                           <td>
+<%--                               <form action='<c:url value="/upload.jsp?id=${candidate.id}"/>'>--%>
+                                   <form action='<c:url value="/upload.jsp?name=${image}"/>'>
+                               <button type="submit" class="btn btn-primary">Добавить</button>
+                               </form>
+                               <button type="submit" class="btn btn-primary">Удалить</button>
                            </td>
                        </tr>
                    </c:forEach>

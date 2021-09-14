@@ -17,7 +17,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-
     <dependency>
       <groupId>javax</groupId>
       <artifactId>javaee-api</artifactId>
@@ -35,26 +34,21 @@
       <artifactId>jstl</artifactId>
       <version>1.2</version>
     </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.4</version>
+    </dependency>
   </dependencies>
-
   <build>
     <finalName>job4j_dreamjob</finalName>
     <plugins>
       <plugin>
-        <groupId>org.apache.tomcat.maven</groupId>
-        <artifactId>tomcat7-maven-plugin</artifactId>
-        <version>2.2</version>
-        <configuration>
-          <port>8888</port>
-          <path>/</path>
-        </configuration>
-      </plugin>
-      <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
         <configuration>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>9</source>
+          <target>9</target>
         </configuration>
       </plugin>
     </plugins>
@@ -64,5 +58,4 @@
     <maven.compiler.source>14</maven.compiler.source>
     <maven.compiler.target>14</maven.compiler.target>
   </properties>
-
 </project>

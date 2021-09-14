@@ -20,9 +20,9 @@ public class Store {
         posts.put(1, new Post(1, "Junior Java Job"));
         posts.put(2, new Post(2, "Middle Java Job"));
         posts.put(3, new Post(3, "Senior Java Job"));
-        candidates.put(1, new Candidate(1, "Иванов Иван"));
-        candidates.put(2, new Candidate(2, "Петров Петр"));
-        candidates.put(3, new Candidate(3, "Васильев Василий"));
+        candidates.put(1, new Candidate(1, "Иванов"));
+        candidates.put(2, new Candidate(2, "Петров"));
+        candidates.put(3, new Candidate(3, "Васильев"));
     }
 
     public static Store instOf() {
