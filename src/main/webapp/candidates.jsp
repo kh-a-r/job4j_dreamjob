@@ -50,11 +50,10 @@
                                <c:out value="${candidate.name}"/>
                            </td>
                            <td>
-<%--                               <form action='<c:url value="/upload.jsp?id=${candidate.id}"/>'>--%>
-                                   <form action='<c:url value="/upload.jsp?name=${image}"/>'>
+                               <form action='<c:url value="/upload?id=${candidate.id}"/>'>
                                <button type="submit" class="btn btn-primary">Добавить</button>
-                               </form>
                                <button type="submit" class="btn btn-primary">Удалить</button>
+                               </form>
                            </td>
                        </tr>
                    </c:forEach>
