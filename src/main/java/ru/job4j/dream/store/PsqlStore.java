@@ -146,7 +146,7 @@ public class PsqlStore implements Store {
 
 
     @Override
-    public Post findById(int id) {
+    public Post findPostById(int id) {
         Post post = null;
         try (Connection cn = pool.getConnection();
              PreparedStatement ps = cn.prepareStatement("SELECT * FROM post WHERE id = id")
