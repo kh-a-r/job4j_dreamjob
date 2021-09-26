@@ -1,5 +1,5 @@
 <%@ page contentType="text/html; charset=UTF-8" %>
-<%@ page import="ru.job4j.dream.store.Store" %>
+<%@ page import="ru.job4j.dream.store.MemStore" %>
 <%@ page import="ru.job4j.dream.model.Candidate" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core" %>
 <%@ page import="java.util.Collection" %>
@@ -50,11 +50,24 @@
                                <c:out value="${candidate.name}"/>
                            </td>
                            <td>
-                               <form action='<c:url value="/upload?id=${candidate.id}"/>'>
+                    <tbody>
+                    <c:forEach items="${images}" var="image" varStatus="status">
+                        <tr valign="top">
+
+                            <td>
+                                <img src="<c:url value='/download?name=${image}'/>" width="100px" height="100px"/>
+                            </td>
+                        </tr>
+                    </c:forEach>
+                    </tbody>
+                           </td>
+                           <td>
+                               <form action='<c:url value="/upload.jsp?id=${candidate.id}"/>'>
                                <button type="submit" class="btn btn-primary">Добавить</button>
                                <button type="submit" class="btn btn-primary">Удалить</button>
                                </form>
                            </td>
+
                        </tr>
                    </c:forEach>
                     </tbody>

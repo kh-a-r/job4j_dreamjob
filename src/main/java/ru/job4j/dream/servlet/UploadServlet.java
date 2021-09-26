@@ -26,7 +26,7 @@ public class UploadServlet extends HttpServlet {
             images.add(name.getName());
         }
         req.setAttribute("images", images);
-        req.getRequestDispatcher("/upload.jsp").forward(req, resp);
+       req.getRequestDispatcher("/upload.jsp").forward(req, resp);
     }
 
     @Override
